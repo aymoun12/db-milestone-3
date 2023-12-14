@@ -23,28 +23,75 @@ namespace web_app
             String facultyString = faculty.Text;
             String emailString = email.Text;
             String majorString = major.Text;
-            int semesterInt = Int16.Parse(semester.Text);
+            String semesterString = semester.Text;
 
-            SqlCommand register = new SqlCommand("Procedures_StudentRegistration", conn);
-            register.Parameters.Add(new SqlParameter("@first_name", firstNameString));
-            register.Parameters.Add(new SqlParameter("@last_name", lastNameString));
-            register.Parameters.Add(new SqlParameter("@password", passwordString));
-            register.Parameters.Add(new SqlParameter("@faculty", facultyString));
-            register.Parameters.Add(new SqlParameter("@email", emailString));
-            register.Parameters.Add(new SqlParameter("@major", majorString));
-            register.Parameters.Add(new SqlParameter("@Semester", semesterInt));
+            bool areAllFieldsValid = true;
 
-            SqlParameter studentIdParam = register.Parameters.Add(new SqlParameter("@Student_id", SqlDbType.Int));
-            studentIdParam.Direction = ParameterDirection.Output;
+            if (firstNameString.Equals(""))
+            {
+                Response.Write("First name is empty.");
+                areAllFieldsValid = false;
+            }
 
-            conn.Open();
-            register.ExecuteNonQuery();
-            conn.Close();
+            if (lastNameString.Equals(""))
+            {
+                Response.Write("Last name is empty.");
+                areAllFieldsValid = false;
+            }
 
-            String userId = studentIdParam.Value.ToString();
-            Session["user_id"] = userId;
-            Response.Write(userId);
-            Response.Redirect("main_menu.aspx");
+            if (passwordString.Equals(""))
+            {
+                Response.Write("Password is empty.");
+                areAllFieldsValid = false;
+            }
+
+            if (facultyString.Equals(""))
+            {
+                Response.Write("Faculty is empty.");
+                areAllFieldsValid = false;
+            }
+
+            if (emailString.Equals(""))
+            {
+                Response.Write("Email is empty.");
+                areAllFieldsValid = false;
+            }
+
+            if (majorString.Equals(""))
+            {
+                Response.Write("Major is empty.");
+                areAllFieldsValid = false;
+            }
+
+            if (semesterString.Equals(""))
+            {
+                Response.Write("Semester is empty.");
+                areAllFieldsValid = false;
+            }
+
+            if (areAllFieldsValid)
+            {
+                SqlCommand register = new SqlCommand("Procedures_StudentRegistration", conn);
+                register.Parameters.Add(new SqlParameter("@first_name", firstNameString));
+                register.Parameters.Add(new SqlParameter("@last_name", lastNameString));
+                register.Parameters.Add(new SqlParameter("@password", passwordString));
+                register.Parameters.Add(new SqlParameter("@faculty", facultyString));
+                register.Parameters.Add(new SqlParameter("@email", emailString));
+                register.Parameters.Add(new SqlParameter("@major", majorString));
+                register.Parameters.Add(new SqlParameter("@Semester", Int16.Parse(semesterString)));
+
+                SqlParameter studentIdParam = register.Parameters.Add(new SqlParameter("@Student_id", SqlDbType.Int));
+                studentIdParam.Direction = ParameterDirection.Output;
+
+                conn.Open();
+                register.ExecuteNonQuery();
+                conn.Close();
+
+                String userId = studentIdParam.Value.ToString();
+                Session["user_id"] = userId;
+                Response.Write(userId);
+                Response.Redirect("main_menu.aspx");
+            }
         }
 
         protected void Back(object sender, EventArgs e)
