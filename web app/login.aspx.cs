@@ -52,7 +52,7 @@ namespace web_app
                     Response.Redirect("main_menu.aspx");
                 } else
                 {
-                    Response.Write("Either the user ID or the password is incorrect.");
+                    Response.Write("Either the user ID or the password is incorrect or the financial status is invalid.");
                 }
             }
         }

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DB_Insertions.sql" />
     <Content Include="phone_numbers.aspx" />
     <Content Include="DB_M2_Solution.sql" />
     <Content Include="main_menu.aspx" />
