@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Web.Configuration;
+using System.Web.UI.WebControls;
 
 namespace web_app
 {
@@ -72,6 +73,7 @@ namespace web_app
             if (areAllFieldsValid)
             {
                 SqlCommand register = new SqlCommand("Procedures_StudentRegistration", conn);
+                register.CommandType = CommandType.StoredProcedure;
                 register.Parameters.AddWithValue("@first_name", firstNameString);
                 register.Parameters.AddWithValue("@last_name", lastNameString);
                 register.Parameters.AddWithValue("@password", passwordString);

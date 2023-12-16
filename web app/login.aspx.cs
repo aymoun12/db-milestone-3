@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Web.Configuration;
@@ -36,6 +37,7 @@ namespace web_app
             if (areAllFieldsValid)
             {
                 SqlCommand login = new SqlCommand("FN_StudentLogin", conn);
+                login.CommandType = CommandType.StoredProcedure;
                 login.Parameters.AddWithValue("@Student_id", Convert.ToInt32(userIdString));
                 login.Parameters.AddWithValue("@password", passwordString);
 
