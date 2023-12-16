@@ -24,6 +24,24 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlForm coursesForm;
 
         /// <summary>
+        /// optionalCoursesSemesterCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox optionalCoursesSemesterCode;
+
+        /// <summary>
+        /// refreshOptionalCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button refreshOptionalCourses;
+
+        /// <summary>
         /// optionalCoursesForm control.
         /// </summary>
         /// <remarks>
@@ -31,6 +49,24 @@ namespace web_app
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl optionalCoursesForm;
+
+        /// <summary>
+        /// availableCoursesSemesterCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox availableCoursesSemesterCode;
+
+        /// <summary>
+        /// refreshAvailableCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button refreshAvailableCourses;
 
         /// <summary>
         /// availableCoursesForm control.
@@ -42,6 +78,24 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl availableCoursesForm;
 
         /// <summary>
+        /// requiredCoursesSemesterCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox requiredCoursesSemesterCode;
+
+        /// <summary>
+        /// refreshRequiredCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button refreshRequiredCourses;
+
+        /// <summary>
         /// requiredCoursesForm control.
         /// </summary>
         /// <remarks>
@@ -49,6 +103,15 @@ namespace web_app
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl requiredCoursesForm;
+
+        /// <summary>
+        /// refreshMissingCourses control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button refreshMissingCourses;
 
         /// <summary>
         /// missingCoursesForm control.
