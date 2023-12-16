@@ -36,8 +36,7 @@ namespace web_app
 
             if (areAllFieldsValid)
             {
-                SqlCommand login = new SqlCommand("FN_StudentLogin", conn);
-                login.CommandType = CommandType.StoredProcedure;
+                SqlCommand login = new SqlCommand("SELECT dbo.FN_StudentLogin(@Student_id, @password)", conn);
                 login.Parameters.AddWithValue("@Student_id", Convert.ToInt32(userIdString));
                 login.Parameters.AddWithValue("@password", passwordString);
 

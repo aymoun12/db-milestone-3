@@ -39,8 +39,7 @@ namespace web_app
 
         private void LoadAvailableCourses(SqlConnection connection)
         {
-            SqlCommand courses = new SqlCommand("FN_SemesterAvalaibleCourses", connection);
-            courses.CommandType = CommandType.StoredProcedure;
+            SqlCommand courses = new SqlCommand("SELECT dbo.FN_SemesterAvalaibleCourses(@semestercode)", connection);
             courses.Parameters.AddWithValue("@semestercode", "");
 
             SqlDataReader rdr = courses.ExecuteReader(CommandBehavior.CloseConnection);
