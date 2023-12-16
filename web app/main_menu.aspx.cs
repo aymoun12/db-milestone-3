@@ -8,7 +8,7 @@ namespace web_app
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            userId.Text = "Hello user " + Session["user_id"];
         }
 
         protected void ViewPhoneNumbers(object sender, EventArgs e)

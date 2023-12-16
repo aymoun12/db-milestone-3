@@ -8,6 +8,7 @@
 </head>
 <body>
     <form id="mainMenuForm" runat="server">
+        <asp:Label id="userId" runat="server"></asp:Label>
         <div>
             <asp:Label runat="server" Text="Main Menu"></asp:Label>
         </div>
