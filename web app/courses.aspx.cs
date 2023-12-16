@@ -26,6 +26,7 @@ namespace web_app
             courses.CommandType = CommandType.StoredProcedure;
             courses.Parameters.AddWithValue("@StudentID", Convert.ToInt32((string)Session["user_id"]));
             courses.Parameters.AddWithValue("@current_semester_code", optionalCoursesSemesterCode.Text);
+            
             SqlDataReader rdr = courses.ExecuteReader(CommandBehavior.CloseConnection);
             while (rdr.Read())
             {
@@ -67,6 +68,7 @@ namespace web_app
             courses.CommandType = CommandType.StoredProcedure;
             courses.Parameters.AddWithValue("@StudentID", Convert.ToInt32((string)Session["user_id"]));
             courses.Parameters.AddWithValue("@current_semester_code", requiredCoursesSemesterCode.Text);
+            
             SqlDataReader rdr = courses.ExecuteReader(CommandBehavior.CloseConnection);
             while (rdr.Read())
             {

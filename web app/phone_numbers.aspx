@@ -9,11 +9,14 @@
 <body>
     <form id="phoneNumbersForm" runat="server">
         <div>
-            <asp:Label runat="server" Text="Phone Numbers"></asp:Label>
-            <asp:Button id="add" runat="server" Text="Add" OnClick="Add" />
-        </div>
+            <asp:Label runat="server" Text="Add a new phone number."></asp:Label>
+            <div>
+                <asp:TextBox ID="phoneNumber" placeholder="Phone Number" runat="server"></asp:TextBox>
+                <asp:Button ID="add" runat="server" Text="Add" OnClick="Add" />
+            </div>
+        <br>
         <div>
-            <asp:Button id="back" runat="server" Text="Back" OnClick="Back" />
+            <asp:Button ID="back" runat="server" Text="Back" OnClick="Back" />
         </div>
     </form>
 </body>

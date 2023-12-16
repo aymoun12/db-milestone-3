@@ -24,6 +24,15 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlForm phoneNumbersForm;
 
         /// <summary>
+        /// phoneNumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox phoneNumber;
+
+        /// <summary>
         /// add control.
         /// </summary>
         /// <remarks>
