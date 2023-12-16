@@ -87,21 +87,21 @@ namespace web_app
         protected global::System.Web.UI.WebControls.TextBox semester;
 
         /// <summary>
-        /// Register control.
+        /// register control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Register;
+        protected global::System.Web.UI.WebControls.Button register;
 
         /// <summary>
-        /// Back control.
+        /// back control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Back;
+        protected global::System.Web.UI.WebControls.Button back;
     }
 }

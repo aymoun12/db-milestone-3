@@ -24,6 +24,15 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlForm mainMenuForm;
 
         /// <summary>
+        /// phoneNumbers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button phoneNumbers;
+
+        /// <summary>
         /// courses control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace web_app
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button courses;
+
+        /// <summary>
+        /// requests control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button requests;
 
         /// <summary>
         /// logOut control.

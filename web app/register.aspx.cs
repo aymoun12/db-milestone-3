@@ -72,13 +72,13 @@ namespace web_app
             if (areAllFieldsValid)
             {
                 SqlCommand register = new SqlCommand("Procedures_StudentRegistration", conn);
-                register.Parameters.Add(new SqlParameter("@first_name", firstNameString));
-                register.Parameters.Add(new SqlParameter("@last_name", lastNameString));
-                register.Parameters.Add(new SqlParameter("@password", passwordString));
-                register.Parameters.Add(new SqlParameter("@faculty", facultyString));
-                register.Parameters.Add(new SqlParameter("@email", emailString));
-                register.Parameters.Add(new SqlParameter("@major", majorString));
-                register.Parameters.Add(new SqlParameter("@Semester", Int16.Parse(semesterString)));
+                register.Parameters.AddWithValue("@first_name", firstNameString);
+                register.Parameters.AddWithValue("@last_name", lastNameString);
+                register.Parameters.AddWithValue("@password", passwordString);
+                register.Parameters.AddWithValue("@faculty", facultyString);
+                register.Parameters.AddWithValue("@email", emailString);
+                register.Parameters.AddWithValue("@major", majorString);
+                register.Parameters.AddWithValue("@Semester", Convert.ToInt32(semesterString));
 
                 SqlParameter studentIdParam = register.Parameters.Add(new SqlParameter("@Student_id", SqlDbType.Int));
                 studentIdParam.Direction = ParameterDirection.Output;

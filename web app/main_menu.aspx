@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="main_menu.aspx.cs" Inherits="web_app.MainMenuForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main_menu.aspx.cs" Inherits="web_app.MainMenuForm" %>
 
 <!DOCTYPE html>
 
@@ -12,10 +12,10 @@
             <asp:Label runat="server" Text="Main Menu"></asp:Label>
         </div>
         <div>
-            <asp:Button ID="phoneNumbers" runat="server" Text="View Phone Numbers" OnClick="ViewPhoneNumbers" />
-            <asp:Button ID="courses" runat="server" Text="View Courses" OnClick="ViewCourses" />
-            <asp:Button ID="requests" runat="server" Text="View Requests" OnClick="ViewRequests" />
-            <asp:Button ID="logOut" runat="server" Text="Log Out" OnClick="LogOut" />
+            <asp:Button id="phoneNumbers" runat="server" Text="View Phone Numbers" OnClick="ViewPhoneNumbers" />
+            <asp:Button id="courses" runat="server" Text="View Courses" OnClick="ViewCourses" />
+            <asp:Button id="requests" runat="server" Text="View Requests" OnClick="ViewRequests" />
+            <asp:Button id="logOut" runat="server" Text="Log Out" OnClick="LogOut" />
         </div>
     </form>
 </body>

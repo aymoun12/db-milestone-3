@@ -68,11 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="phone_numbers.aspx" />
-    <Content Include="requests.aspx" />
     <Content Include="DB_M2_Solution.sql" />
     <Content Include="main_menu.aspx" />
     <Content Include="courses.aspx" />
     <Content Include="register.aspx" />
+    <Content Include="requests.aspx" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
   </ItemGroup>
@@ -83,13 +83,6 @@
     </Compile>
     <Compile Include="phone_numbers.aspx.designer.cs">
       <DependentUpon>phone_numbers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="requests.aspx.cs">
-      <DependentUpon>requests.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="requests.aspx.designer.cs">
-      <DependentUpon>requests.aspx</DependentUpon>
     </Compile>
     <Compile Include="main_menu.aspx.cs">
       <DependentUpon>main_menu.aspx</DependentUpon>
@@ -119,6 +112,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="requests.aspx.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="requests.aspx.designer.cs">
+      <DependentUpon>requests.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

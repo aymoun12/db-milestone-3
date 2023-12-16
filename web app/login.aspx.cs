@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Web.Configuration;
 
 namespace web_app
@@ -15,7 +16,7 @@ namespace web_app
             string connstr = WebConfigurationManager.ConnectionStrings["Advising_System"].ToString();
             SqlConnection conn = new SqlConnection(connstr);
 
-            String userIdString = userID.Text;
+            String userIdString = userId.Text;
             String passwordString = password.Text;
 
             bool areAllFieldsValid = true;
@@ -35,8 +36,8 @@ namespace web_app
             if (areAllFieldsValid)
             {
                 SqlCommand login = new SqlCommand("FN_StudentLogin", conn);
-                login.Parameters.Add(new SqlParameter("@Student_id", Int16.Parse(userIdString)));
-                login.Parameters.Add(new SqlParameter("@password", passwordString));
+                login.Parameters.AddWithValue("@Student_id", Convert.ToInt32(userIdString));
+                login.Parameters.AddWithValue("@password", passwordString);
 
                 conn.Open();
                 object result = login.ExecuteScalar();
@@ -47,6 +48,9 @@ namespace web_app
                 {
                     Session["user_id"] = userIdString;
                     Response.Redirect("main_menu.aspx");
+                } else
+                {
+                    Response.Write("Either the user ID or the password is incorrect.");
                 }
             }
         }

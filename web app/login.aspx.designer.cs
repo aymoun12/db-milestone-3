@@ -24,13 +24,13 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
 
         /// <summary>
-        /// userID control.
+        /// userId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox userID;
+        protected global::System.Web.UI.WebControls.TextBox userId;
 
         /// <summary>
         /// password control.

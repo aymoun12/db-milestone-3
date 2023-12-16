@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="login.aspx.cs" Inherits="web_app.LoginForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="web_app.LoginForm" %>
 
 <!DOCTYPE html>
 
@@ -13,15 +13,15 @@
         </div>
         <div>&nbsp;User ID</div>
         <div>
-            <asp:TextBox ID="userID" runat="server"></asp:TextBox>&nbsp;
+            <asp:TextBox id="userId" runat="server"></asp:TextBox>&nbsp;
         </div>
         <div>&nbsp;Password</div>
         <div>
-            <asp:TextBox ID="password" runat="server"></asp:TextBox>&nbsp;
+            <asp:TextBox id="password" runat="server"></asp:TextBox>&nbsp;
         </div>
         <div>
-            <asp:Button ID="login" runat="server" Text="Log In" OnClick="Login" />
-            <asp:Button ID="register" runat="server" Text="Register" OnClick="Register" />
+            <asp:Button id="login" runat="server" Text="Log In" OnClick="Login" />
+            <asp:Button id="register" runat="server" Text="Register" OnClick="Register" />
         </div>
     </form>
 </body>

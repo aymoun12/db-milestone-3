@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="phone_numbers.aspx.cs" Inherits="web_app.PhoneNumbersForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="phone_numbers.aspx.cs" Inherits="web_app.PhoneNumbersForm" %>
 
 <!DOCTYPE html>
 
@@ -10,10 +10,10 @@
     <form id="phoneNumbersForm" runat="server">
         <div>
             <asp:Label runat="server" Text="Phone Numbers"></asp:Label>
-            <asp:Button ID="add" runat="server" Text="Add" OnClick="Add" />
+            <asp:Button id="add" runat="server" Text="Add" OnClick="Add" />
         </div>
         <div>
-            <asp:Button ID="back" runat="server" Text="Back" OnClick="Back" />
+            <asp:Button id="back" runat="server" Text="Back" OnClick="Back" />
         </div>
     </form>
 </body>

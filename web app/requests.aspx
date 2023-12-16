@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="requests.aspx.cs" Inherits="web_app.RequestsForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="requests.aspx.cs" Inherits="web_app.RequestsForm" %>
 
 <!DOCTYPE html>
 
@@ -15,7 +15,7 @@
             <asp:Label runat="server" Text="Credit Hour Requests"></asp:Label>
         </div>
         <div>
-            <asp:Button ID="back" runat="server" Text="Back" OnClick="Back" />
+            <asp:Button id="back" runat="server" Text="Back" OnClick="Back" />
         </div>
     </form>
 </body>

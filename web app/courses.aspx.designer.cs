@@ -24,6 +24,42 @@ namespace web_app
         protected global::System.Web.UI.HtmlControls.HtmlForm coursesForm;
 
         /// <summary>
+        /// optionalCoursesForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl optionalCoursesForm;
+
+        /// <summary>
+        /// availableCoursesForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl availableCoursesForm;
+
+        /// <summary>
+        /// requiredCoursesForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl requiredCoursesForm;
+
+        /// <summary>
+        /// missingCoursesForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl missingCoursesForm;
+
+        /// <summary>
         /// back control.
         /// </summary>
         /// <remarks>

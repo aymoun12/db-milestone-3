@@ -11,17 +11,26 @@ namespace web_app
 {
 
 
-    public partial class CoursesForm
+    public partial class PhoneNumbersForm
     {
 
         /// <summary>
-        /// coursesForm control.
+        /// phoneNumbersForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm coursesForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm phoneNumbersForm;
+
+        /// <summary>
+        /// add control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button add;
 
         /// <summary>
         /// back control.
